@@ -1,0 +1,28 @@
+package org.ragusir.programingClass;
+
+import java.util.Scanner;
+
+public class SumDigitsquare {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a number");
+		int n=sc.nextInt();
+		boolean b=isArmStrong(n);
+		if(b==true)
+			System.out.println("yes");
+		else
+			System.out.println("no");
+	}
+	static boolean isArmStrong(int x) {
+		int sum=0,t=x;
+		do {
+			int r=x%10;
+			sum=sum+(r*r*r);
+			x=x/10;
+			
+			
+		}while(x!=0);
+		return (sum==t);
+	}
+
+}
