@@ -16,10 +16,14 @@ public class Palindrome {
 	static boolean isPalindrome(String s) {
 		char ch[]=s.toCharArray();
 		int i=0,j=s.length()-1;
-	  if(ch[i]!=ch[j]) {
+		while(i<j) {
+	  if(ch[i]!=ch[j]) 
 		  return false;
+		  i++;
+		  j--;
 	  }
+		
 	  return true;
-	}
-
+		}
+	
 }
