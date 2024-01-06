@@ -12,11 +12,13 @@ public class ArrayNthbig {
 		for(int i=0;i<ar.length;i++) {
 			ar[i]=sc.nextInt();
 		}
-	nthBiggest(ar);
+	//nthBiggest(ar);
 	for(int i=0;i<ar.length;i++) {
 		System.out.println(ar[i]);
 	}
 	}
+	
+	
 	static int nthBiggest(int ar[],int n) {
 		for(int i=0;i<ar.length;i++) {
 			int count=0;

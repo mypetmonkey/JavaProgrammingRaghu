@@ -9,7 +9,7 @@ public class BiggestNumELSEIF {
 		int c=sc.nextInt();
 		if(a>b && a>c)
 			System.out.println("biggest num  ="+a);
-		else if(b>c)
+		else if(b>c &&b>a)
 			System.out.println("biggest num is  ="+b);
 		else
 			System.out.println("biggest num is  ="+c);

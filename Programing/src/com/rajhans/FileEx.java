@@ -17,7 +17,7 @@ public static void main(String[] args) throws IOException
 	System.out.println("reading from file");
 	while(s!=null) {
 		System.out.println(s);
-		s=bf.readLine(); b
+		s=bf.readLine(); 
 	}
 }	
 

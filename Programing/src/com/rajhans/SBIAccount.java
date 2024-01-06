@@ -12,7 +12,7 @@ public class SBIAccount {
 		this.balance = balance;
 	}
 	public static void main(String[] args) {
-		SBIAccount a1=new SBIAccount(2123344323l,1234,60000d);
+		SBIAccount a1=new SBIAccount(123456789,1234,2000);
 		a1.withdrawMoney();
 		
 	}
@@ -20,35 +20,38 @@ public class SBIAccount {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter your pin");
 		int p=sc.nextInt();
-		try {
+		
+	try {
+			
 	if(p==pin) {
 		System.out.println("enter the amount");
 		double amt=sc.nextDouble();
 		
-		if (amt<=balance) {
+	if (amt<=balance) {
 			balance=balance-amt;
+			System.out.println("remaining balance is :"+balance);
 			System.out.println("collect your cash");
 		}
-		else
+	}
+	
+	else if(p!=pin)
 		{
 			throw new InvalidException("wrong pin");
 		} 
 		
-	}}
-		catch (InvalidException e){
-			System.out.println("insufficient balance");
+		
+		}catch(InvalidException e) {
+			System.out.println("wrong pin");
 		}
-			}
 		
-		
-		
-	public void sample() {
-		System.out.println("you can go");
 	}
+}
 	
-
-	}
+@SuppressWarnings("serial")
 class InvalidException extends RuntimeException{
 	public InvalidException(String s) {
-		super();	}
+		super();	
+	}
 }
+
+		

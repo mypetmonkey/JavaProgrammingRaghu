@@ -8,13 +8,15 @@ public class Array5Prime
 		int count=0;
 		for(int i=0;i<x.length;i++) {
 			
-			int y=x[i];
-			boolean b=prime(y);
+			//int y=x[i];
+			boolean b=prime(x[i]);
 			if(b==true)
 			count++;
 			}
 		return count;	
 	}
+	
+	
 	static boolean prime(int y)
 	{
 		for(int i=2;i<y;i++)

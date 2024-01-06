@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Small3Num {
 
-public class BiggestNumELSEIF {
+
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter three number");
@@ -17,4 +17,4 @@ public class BiggestNumELSEIF {
 			System.out.println("smallest num is  ="+c);
 }
 }
-}
+
